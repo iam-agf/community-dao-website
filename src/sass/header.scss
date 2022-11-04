@@ -1,0 +1,47 @@
+@import './variables.scss';
+// 
+
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+    background: linear-gradient(61deg, rgba(255, 255, 255, 1) 0%, rgba(246, 214, 84, 1) 23%, rgba(229, 171, 85, 1) 100%);
+    box-shadow: 0 5px 13px 0 rgba(rgb(75, 75, 75), 0.15);
+    
+    height: 7vh;
+    width: 90vw; // Edit this if edits padding
+    min-height: 10vh;
+    max-height: 10vh;
+    padding: 1vw 5vw 0;
+
+    &-logo {
+        font-size: 100;
+    }
+
+    &-nav {
+        margin-left: auto;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        .header-button{  
+            margin: 0 1vw;
+            padding: 0.5vh 1vw;
+            
+            background-color: $color-yellow;
+            border: 1px outset rgb(255, 251, 167);
+            border-radius: 3px;
+            
+            text-decoration: none;
+            color: black;
+            font-size: large;
+
+            transition-duration: 0.3s;
+        }
+        .header-button:hover{
+            background-color: black;
+            color: $color-orange;
+            scale: 1.1;
+        }
+    }
+}
