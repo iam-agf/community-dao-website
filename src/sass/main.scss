@@ -6,11 +6,17 @@
 @import './header.scss';
 
 @import './variables.scss';
+@import './foil.scss';
+
+html {
+    height: 100%; /* Fallback CSS for IE 4-6 and older browsers. Note: Without this setting, body below cannot achieve 100% height. */
+    height: 100vh;/* Overrides 100% height in modern HTML5 browsers and uses the viewport's height. Only works in modern HTML5 browsers */
+}
 
 body {
-    background-color: greenyellow;
+    background-color: black;
     margin: 0;
     padding: 0;
-    font-family: "Kanit", Times, serif;
+    font-family: "8bit", Times, serif;
     font-weight: 300;
 }
