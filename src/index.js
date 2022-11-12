@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './sass/main.scss';
 import App from './App';
 import { BrowserRouter } from 'react-router-dom';
+import './fonts/minecraft.ttf';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
