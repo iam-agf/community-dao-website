@@ -1,5 +1,45 @@
 @import './variables.scss';
 
 .validators {
-    background-color: rgb(233, 129, 129);
+    background-color: orange;
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+
+    &-title{
+        padding-top: 8vh;
+        text-align: center;
+        font-size: 8vh;
+        padding-top: 5vh;
+    }
+    &-description{
+        padding-top: 5vh;
+        text-align: center;
+        font-size: 2vh;
+        padding-top: 5vh;
+    }
+    &-validators{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        .chain-logo{
+            margin: 5vw 5vw 0;
+            background-color: black;
+            border-radius: 50%;
+            padding: 1vh;
+            height: 20vh;
+            width: 20vh;
+            transition: .5s all;
+        }
+        .chain-logo:hover{
+            transform: scale(1.1);
+            transform: rotateZ(360deg);
+        }
+    }
+    &-card{
+        text-align: center;
+    }
+
 }
