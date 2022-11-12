@@ -1,12 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import HeaderButton from "./components/HeaderButton";
 import "./sass/main.scss";
+import logo from './assets/img/logo_circle_background.png';
 
 function Header() {
   return (
     <div className="header">
-      <div className="header-logo">logo</div>
+      <img className="header-logo" id="logo" src={logo} alt="logo" />
       <div className="header-nav">
         <Link to={"/chains"} className="header-button">Chains</Link>
         <Link to={"/validators"} className="header-button">Validators</Link>
