@@ -1,8 +1,19 @@
 @import './variables.scss';
 
 .home {
-    background-color: purple;
-    font-size: 1vh;
-    display: flex;
-    flex-direction: row;
+    background-color: orange;
+    float: bottom;
+    height: 100vh;
+    width: 100vw;
+
+    &-title {
+        grid-area: text;
+        font-family: 8bit;
+        text-align: center;
+        font-size: 15vh;
+        padding: 25vh 5vw;
+        width: 90vw;
+        height: 90vh;
+    }
+
 }

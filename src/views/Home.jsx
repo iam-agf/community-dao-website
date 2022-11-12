@@ -6,31 +6,25 @@ import { useEffect } from "react";
 
 function Home() {
 
-  function consoleText(words, id, colors) {
-    if (colors === undefined) colors = ['#000'];
-    var visible = true;
-    var con = document.getElementById('home-body-description');
+  function consoleText(words) {
+    var inputText = "Community DAO";
     var letterCount = 1;
     var x = 1;
     var waiting = false;
-    var target = document.getElementById(id)
-    target.setAttribute('style', 'color:' + colors[0])
+    var target = document.getElementById('text')
+    target.setAttribute('style', 'color:rgb(245, 193, 36); text-shadow: 1vh 0 #000, -2px 0 #000, 0 2px #000, 0 -2px #000, 1px 1px #000, -1px -1px #000, 1px -1px #000, -1px 1px #000')
     window.setInterval(function () {
 
       if (letterCount === 0 && waiting === false) {
         waiting = true;
-        target.innerHTML = words[0].substring(0, letterCount)
+        target.innerHTML = inputText.substring(0, letterCount)
         window.setTimeout(function () {
-          var usedColor = colors.shift();
-          colors.push(usedColor);
-          var usedWord = words.shift();
-          words.push(usedWord);
           x = 1;
-          target.setAttribute('style', 'color:' + colors[0])
+          target.setAttribute('style', 'color:rgb(245, 193, 36); text-shadow: 1vh 0 #000, -2px 0 #000, 0 2px #000, 0 -2px #000, 1px 1px #000, -1px -1px #000, 1px -1px #000, -1px 1px #000')
           letterCount += x;
           waiting = false;
         }, 1000)
-      } else if (letterCount === words[0].length + 1 && waiting === false) {
+      } else if (letterCount === inputText.length + 1 && waiting === false) {
         waiting = true;
         window.setTimeout(function () {
           x = -1;
@@ -38,14 +32,14 @@ function Home() {
           waiting = false;
         }, 1000)
       } else if (waiting === false) {
-        target.innerHTML = words[0].substring(0, letterCount)
+        target.innerHTML = inputText.substring(0, letterCount)
         letterCount += x;
       }
     }, 120)
   }
 
   useEffect(() => {
-    consoleText(['Community DAO'], 'text', ['tomato']);
+    consoleText();
   }, []);
 
 
