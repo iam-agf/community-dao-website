@@ -3,33 +3,57 @@
 .about {
     background-color: orange;
     width: 100vw;
-    height: 100vh;
 
     display: flex;
     flex-direction: column;
 
-    &-title{
+    &-title {
         padding-top: 8vh;
         text-align: center;
         font-size: 8vh;
         padding-top: 5vh;
     }
-    &-members{
+
+    &-description {
+        width: 80vw;
+        margin: 0 10vw;
+        padding-top: 5vh;
+        text-align: center;
+        font-size: 2vh;
+        padding-bottom: 5vh;
+    }
+
+    &-members {
+        width: 90vw;
+        margin: 0 5vw 2vh;
         display: flex;
         flex-direction: row;
         justify-content: center;
-        &-member{
+
+        &-card {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            width: 15vw;
+            margin: 0 3vw;
+
+        }
+
+        &-member {
             width: 25vh;
-            margin: 5vh;
+            margin: 5vh 15vh;
             background-color: black;
             border-radius: 50%;
         }
+
     }
-    &-social{
+
+    &-social {
         display: flex;
         flex-direction: row;
         justify-content: center;
-        img{
+
+        img {
             margin: 3vh;
             width: 10vw;
             height: 10vw;
