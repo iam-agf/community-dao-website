@@ -1,0 +1,33 @@
+@import './variables.scss';
+// 
+
+.footer {
+    background: black;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    box-shadow: 0 5px 13px 0 rgba(rgb(75, 75, 75), 0.25);
+
+    height: 10vh;
+    width: 90vw; // Edit this if edits padding
+    min-height: 10vh;
+    max-height: 10vh;
+    padding: 0 5vw;
+    justify-content: end;
+
+    &-title {
+        color: orange;
+        margin: 2vh auto;
+    }
+    
+    a {
+        margin: 0 1vh;
+    }
+    &-content {
+        display: flex;
+        flex-direction: row;
+        align-items: right;
+
+    }
+}
