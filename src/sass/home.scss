@@ -11,9 +11,13 @@
         font-family: 8bit;
         text-align: center;
         font-size: 15vh;
-        padding: 25vh 5vw;
         width: 90vw;
-        height: 90vh;
+        height: 80vh;
+        overflow: hidden;
+    }
+    
+    .console-container{
+        margin: 25vh 5vw;
     }
 
 }

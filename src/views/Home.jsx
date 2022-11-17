@@ -3,6 +3,7 @@ import Header from "../Header";
 import "./../sass/main.scss";
 import logo from '.././assets/img/logo.png';
 import { useEffect } from "react";
+import Footer from "../Footer";
 
 function Home() {
 
@@ -49,6 +50,7 @@ function Home() {
       <div className="home-title">
         <div class='console-container'><span id='text'></span></div>
       </div>
+      <Footer/>
     </div>
   );
 }
