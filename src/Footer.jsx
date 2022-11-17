@@ -1,9 +1,5 @@
 import React from "react";
 import "./sass/main.scss";
-import twitter from "./assets/img/twitter.png";
-import reddit from "./assets/img/reddit.png";
-import discord from "./assets/img/discord.png";
-import telegram from "./assets/img/telegram.png";
 
 function Footer() {
   return (
