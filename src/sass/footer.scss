@@ -14,20 +14,43 @@
     min-height: 10vh;
     max-height: 10vh;
     padding: 0 5vw;
-    justify-content: end;
+    @media screen and (min-width: 600px) {
+        justify-content: end;
 
-    &-title {
-        color: orange;
-        margin: 2vh auto;
+        &-title {
+            color: orange;
+            margin: 2vh auto;
+        }
+
+        a {
+            margin: 0 1vh;
+        }
+
+        &-content {
+            display: flex;
+            flex-direction: row;
+            align-items: right;
+        }
+
     }
-    
-    a {
-        margin: 0 1vh;
-    }
-    &-content {
-        display: flex;
-        flex-direction: row;
-        align-items: right;
+
+    @media screen and (max-width: 600px) {
+        justify-content: center;
+
+        &-title {
+            display: none;
+        }
+
+        a {
+            margin: 0 3vh;
+        }
+
+        &-content {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+        }
 
     }
 }
