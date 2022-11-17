@@ -6,6 +6,7 @@ import callisto from "../assets/img/callisto.jpeg";
 import karan from "../assets/img/karan.jpeg";
 import jorin from "../assets/img/jorin.jpeg";
 import nick from "../assets/img/nick.jpeg";
+import { Link } from "react-router-dom";
 
 function About() {
   return (
@@ -20,20 +21,24 @@ function About() {
         </div>
         <div className="about-content-members">
           <div className="about-content-members-card">
-            <a target="_blank" href="https://twitter.com/Karan_patell1"><img className="about-content-members-member" src={karan} alt="karan" /></a>
+            <Link to="/member/karan"><img className="about-content-members-member" src={karan} alt="karan" /></Link>
           </div>
           <div className="about-content-members-card">
-            <a target="_blank" href="https://twitter.com/Welding_Cosmos"><img className="about-content-members-member" src={nick} alt="nick" /></a>
+            <Link to="/member/nick"><img className="about-content-members-member" src={nick} alt="nick" /></Link>
           </div>
           <div className="about-content-members-card">
-            <a target="_blank" href="https://twitter.com/CallistoCosmo"><img className="about-content-members-member" src={callisto} alt="callisto" /></a>
+            <Link to="/member/callisto"><img className="about-content-members-member" src={callisto} alt="callisto" /></Link>
           </div>
           <div className="about-content-members-card">
-            <a target="_blank" href="https://twitter.com/cosmo_jorin"><img className="about-content-members-member" src={jorin} alt="jorin" /></a>
+            <Link to="/member/jorin"><img className="about-content-members-member" src={jorin} alt="jorin" /></Link>
           </div>
         </div>
+        <div className="about-content-description">
+          Click on them to know more
+        </div>
+
       </div>
-      <Footer/>
+      <Footer />
     </div>
   );
 }
