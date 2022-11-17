@@ -4,51 +4,74 @@
     background-color: orange;
     width: 100vw;
 
-    display: flex;
-    flex-direction: column;
-
     &-content {
+
         height: 80vh;
+        display: flex;
 
         &-title {
-            padding-top: 8vh;
+            padding-top: 4vh;
             text-align: center;
             font-size: 8vh;
-            padding-top: 5vh;
+            padding-bottom: 8vh;
         }
+
+        &-text {
+            height: 30vh;
+            overflow: scroll;
+        }
+
 
         &-description {
             width: 80vw;
-            margin: 0 10vw;
+            margin: 0 5vw 0 0;
             padding-top: 5vh;
             text-align: center;
             font-size: 2vh;
             padding-bottom: 5vh;
+            display: flex;
+            flex-direction: column;
         }
 
-        &-members {
-            width: 90vw;
-            margin: 0 5vw 2vh;
+        &-image {
+            width: 50vh;
+            height: 50vh;
+            margin: 15vh 10vh 15vh 15vh;
+            background-color: black;
+            border-radius: 50%;
+            display: block;
+        }
+
+        &-social {
+            margin: 3vh;
             display: flex;
             flex-direction: row;
             justify-content: center;
 
-            &-card {
+            &-text {
                 display: flex;
-                flex-direction: row;
-                justify-content: space-evenly;
-                width: 15vw;
-                margin: 0 3vw;
-
+                justify-content: center;
+                align-items: center;
             }
 
-            &-member {
-                width: 25vh;
-                margin: 5vh 15vh;
-                background-color: black;
-                border-radius: 50%;
+            a {
+                margin: 0 3vh;
             }
 
+        }
+    }
+
+    @media screen and (min-width: 600px) {
+        &-content {
+            display: flex;
+            flex-direction: row;
+        }
+    }
+
+    @media screen and (max-width: 600px) {
+        &-content {
+            display: flex;
+            flex-direction: column;
         }
     }
 
