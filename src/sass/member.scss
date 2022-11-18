@@ -2,7 +2,7 @@
 
 @media screen and (min-width: 900px) {
     .member {
-        background-color: orange;
+        background-color: $color-orange;
         width: 100vw;
 
         &-content {
@@ -72,7 +72,7 @@
 
 @media screen and (max-width: 900px) {
     .member {
-        background-color: orange;
+        background-color: $color-orange;
         width: 100vw;
 
         &-content {

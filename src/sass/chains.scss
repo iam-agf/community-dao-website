@@ -3,7 +3,7 @@
 
 @media screen and (min-width: 900px) {
     .chains {
-        background-color: orange;
+        background-color: $color-orange;
         width: 100vw;
         height: 100vh;
 
@@ -40,7 +40,7 @@
 
 @media screen and (max-width: 900px) {
     .chains {
-        background-color: orange;
+        background-color: $color-orange;
         width: 100vw;
         height: 100vh;
 

@@ -2,7 +2,7 @@
 
 @media screen and (max-width: 900px) {
     .about {
-        background-color: orange;
+        background-color: $color-orange;
         width: 100vw;
 
         display: flex;
@@ -61,7 +61,7 @@
 
 @media screen and (min-width: 900px) {
     .about {
-        background-color: orange;
+        background-color: $color-orange;
         width: 100vw;
 
         display: flex;
