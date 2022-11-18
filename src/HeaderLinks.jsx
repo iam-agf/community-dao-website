@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 const sections = {"Home":"/", 
-                  "Validtors":"/validators", 
+                  "Validators":"/validators", 
                   "Chains":"/chains", 
                   "About":"/about"
                 }

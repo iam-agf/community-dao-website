@@ -1,78 +1,141 @@
 @import './variables.scss';
 
-.member {
-    background-color: orange;
-    width: 100vw;
+@media screen and (min-width: 900px) {
+    .member {
+        background-color: orange;
+        width: 100vw;
 
-    &-content {
+        &-content {
 
-        height: 80vh;
-        display: flex;
-
-        &-title {
-            padding-top: 4vh;
-            text-align: center;
-            font-size: 8vh;
-            padding-bottom: 8vh;
-        }
-
-        &-text {
-            height: 30vh;
-            overflow: scroll;
-        }
-
-
-        &-description {
-            width: 80vw;
-            margin: 0 5vw 0 0;
-            padding-top: 5vh;
-            text-align: center;
-            font-size: 2vh;
-            padding-bottom: 5vh;
+            height: 80vh;
             display: flex;
-            flex-direction: column;
-        }
 
-        &-image {
-            width: 50vh;
-            height: 50vh;
-            margin: 15vh 10vh 15vh 15vh;
-            background-color: black;
-            border-radius: 50%;
-            display: block;
-        }
-
-        &-social {
-            margin: 3vh;
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
+            &-title {
+                padding-top: 4vh;
+                text-align: center;
+                font-size: 8vh;
+                padding-bottom: 8vh;
+            }
 
             &-text {
+                height: 30vh;
+                overflow: scroll;
+            }
+
+
+            &-description {
+                width: 80vw;
+                margin: 0 5vw 0 0;
+                padding-top: 5vh;
+                text-align: center;
+                font-size: 2vh;
+                padding-bottom: 5vh;
                 display: flex;
+                flex-direction: column;
+            }
+
+            &-image {
+                width: 50vh;
+                height: 50vh;
+                margin: 15vh 10vh 15vh 15vh;
+                background-color: black;
+                border-radius: 50%;
+                display: block;
+            }
+
+            &-social {
+                margin: 3vh;
+                display: flex;
+                flex-direction: row;
                 justify-content: center;
-                align-items: center;
-            }
 
-            a {
-                margin: 0 3vh;
-            }
+                &-text {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
 
+                a {
+                    margin: 0 3vh;
+                }
+
+            }
         }
-    }
 
-    @media screen and (min-width: 900px) {
         &-content {
             display: flex;
             flex-direction: row;
         }
-    }
 
-    @media screen and (max-width: 900px) {
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .member {
+        background-color: orange;
+        width: 100vw;
+
+        &-content {
+
+            height: 80vh;
+            display: flex;
+            flex-direction: column;
+            overflow: scroll;
+
+            &-title {
+                padding-top: 4vh;
+                text-align: center;
+                font-size: 8vh;
+                padding-bottom: 8vh;
+            }
+
+            &-text {
+                height: 30vh;
+                overflow: scroll;
+            }
+
+
+            &-description {
+                width: 90vw;
+                padding: 5vw;
+                text-align: center;
+                font-size: 2vh;
+                display: flex;
+                flex-direction: column;
+            }
+
+            &-image {
+                width: 30vh;
+                height: 30vh;
+                margin: 10vh auto 5vh;
+                background-color: black;
+                border-radius: 50%;
+                display: block;
+            }
+
+            &-social {
+                margin: 3vh;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+
+                &-text {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                a {
+                    margin: 0 3vh;
+                }
+
+            }
+        }
+
         &-content {
             display: flex;
             flex-direction: column;
         }
-    }
 
+    }
 }

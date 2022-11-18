@@ -1,35 +1,77 @@
 @import './variables.scss';
 
-.chains {
-    background-color: orange;
-    width: 100vw;
-    height: 100vh;
 
-    display: flex;
-    flex-direction: column;
+@media screen and (min-width: 900px) {
+    .chains {
+        background-color: orange;
+        width: 100vw;
+        height: 100vh;
 
-    &-content {
-        height: 80vh;
-        &-title {
-            padding-top: 4vh;
-            text-align: center;
-            font-size: 8vh;
-            padding-top: 5vh;
-        }
+        display: flex;
+        flex-direction: column;
 
-        &-validators {
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
+        &-content {
+            height: 80vh;
 
-            .chain-logo {
-                margin: 5vw;
-                background-color: black;
-                border-radius: 50%;
-                padding: 1vh;
-                height: 20vh;
+            &-title {
+                padding-top: 4vh;
+                text-align: center;
+                font-size: 8vh;
+                padding-top: 5vh;
+            }
+
+            &-validators {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+
+                .chain-logo {
+                    margin: 5vw;
+                    background-color: black;
+                    border-radius: 50%;
+                    padding: 1vh;
+                    height: 20vh;
+                }
             }
         }
-    }
 
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .chains {
+        background-color: orange;
+        width: 100vw;
+        height: 100vh;
+
+        display: flex;
+        flex-direction: column;
+
+        &-content {
+            height: 80vh;
+            padding: 5vh;
+
+            &-title {
+                padding-top: 4vh;
+                text-align: center;
+                font-size: 4vh;
+                padding-top: 5vh;
+            }
+
+            &-validators {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+
+                .chain-logo {
+                    margin: 5vw;
+                    background-color: black;
+                    border-radius: 50%;
+                    padding: 1vh;
+                    height: 20vh;
+                }
+            }
+        }
+
+    }
 }

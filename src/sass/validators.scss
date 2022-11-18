@@ -1,54 +1,110 @@
 @import './variables.scss';
 
-.validators {
-    background-color: orange;
-    width: 100vw;
-    height: 100vh;
+@media screen and (min-width: 900px) {
+    .validators {
+        background-color: orange;
+        width: 100vw;
+        height: 100vh;
 
-    display: flex;
-    flex-direction: column;
+        display: flex;
+        flex-direction: column;
 
-    &-content {
-        height: 80vh;
+        &-content {
+            height: 80vh;
 
-        &-title {
-            padding-top: 8vh;
-            text-align: center;
-            font-size: 8vh;
-            padding-top: 5vh;
-        }
-
-        &-description {
-            padding-top: 5vh;
-            text-align: center;
-            font-size: 2vh;
-            padding-top: 5vh;
-        }
-
-        &-validators {
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-
-            .chain-logo {
-                margin: 5vw 5vw 0;
-                background-color: black;
-                border-radius: 50%;
-                padding: 1vh;
-                height: 20vh;
-                width: 20vh;
-                transition: .5s all;
+            &-title {
+                padding-top: 8vh;
+                text-align: center;
+                font-size: 8vh;
+                padding-top: 5vh;
             }
 
-            .chain-logo:hover {
-                transform: scale(1.1);
-                transform: rotateZ(360deg);
+            &-description {
+                padding-top: 5vh;
+                text-align: center;
+                font-size: 2vh;
+                padding-bottom: 5vh;
+            }
+
+            &-validators {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+
+                .chain-logo {
+                    margin: 5vw 5vw 0;
+                    background-color: black;
+                    border-radius: 50%;
+                    padding: 1vh;
+                    height: 20vh;
+                    width: 20vh;
+                    transition: .5s all;
+                }
+
+                .chain-logo:hover {
+                    transform: scale(1.1);
+                    transform: rotateZ(360deg);
+                }
+            }
+
+            &-card {
+                text-align: center;
             }
         }
 
-        &-card {
-            text-align: center;
-        }
     }
+}
 
+@media screen and (max-width: 900px) {
+    .validators {
+        background-color: orange;
+        width: 100vw;
+        height: 100vh;
+    
+        display: flex;
+        flex-direction: column;
+    
+        &-content {
+            height: 80vh;
+    
+            &-title {
+                padding-top: 8vh;
+                text-align: center;
+                font-size: 3vh;
+                padding-top: 5vh;
+            }
+    
+            &-description {
+                padding: 5vh 5vh;
+                text-align: center;
+                font-size: 2vh;
+            }
+    
+            &-validators {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+    
+                .chain-logo {
+                    margin: 5vw 5vw 0;
+                    background-color: black;
+                    border-radius: 50%;
+                    padding: 1vh;
+                    height: 20vh;
+                    width: 20vh;
+                    transition: .5s all;
+                }
+    
+                .chain-logo:hover {
+                    transform: scale(1.1);
+                    transform: rotateZ(360deg);
+                }
+            }
+    
+            &-card {
+                text-align: center;
+            }
+        }
+    
+    }
 }
