@@ -13,7 +13,7 @@ function Validators() {
           Know our validators
         </div>
         <div className="validators-content-description">
-          Delegating to Community DAO you support the chihuahua DAO.
+          Delegating to the Community DAO means you support the Community DAO.
         </div>
         <div className="validators-content-validators">
           <div className="validators-content-card">

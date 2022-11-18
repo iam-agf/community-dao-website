@@ -48,7 +48,7 @@ function Member() {
             {data.content}
           </div>
           <div className="member-content-social">
-            <div className="member-content-social-text">Reach me in</div>
+            <div className="member-content-social-text">Reach me at</div>
             <div className="member-content-social-links">
               <a target="_blank" href={data.twitter}>
                 <svg fill="#black" fillRule="nonzero" viewBox="0 0 50 50" width="5vh" height="5vh">
