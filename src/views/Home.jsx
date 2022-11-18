@@ -47,7 +47,7 @@ function Home() {
     <div className="home">
       <Header />
       <div className="home-title">
-        <div class='console-container'><span id='text'></span></div>
+        <div className='console-container'><span id='text'></span></div>
       </div>
       <Footer/>
     </div>
