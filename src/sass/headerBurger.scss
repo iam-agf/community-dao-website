@@ -1,0 +1,53 @@
+@media all and (max-width: 900px) {
+
+    // Removing the previous icons to only display the hamburger
+    .header-buttons {
+        display: none;
+    }
+
+    // Hamburger icon available here.
+    .icon-hamburger {
+        position: absolute;
+        right: 10vw;
+        top: inherit;
+    }
+
+    .headerBurger {
+        // Section for menu with entries
+        // Makes background blur
+        background-color: rgba(0, 0, 0, 0.728);
+        backdrop-filter: blur(5px);
+        // Position for entries
+        position: absolute;
+        top: -2vh;
+        left: -2vw;
+        width: 104vw;
+        height: 100vh;
+        padding-top: 5vh;
+
+        .child-burger {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            height: 40vh;
+            align-items: center;
+
+            * {
+                text-decoration: none;
+                color: white;
+            }
+        }
+    }
+}
+
+// Desktop version
+@media all and (min-width: 900px) {
+
+    .header-mobile-buttons,
+    .icon-hamburger {
+        display: none;
+        width: 0;
+        height: 0;
+    }
+
+}

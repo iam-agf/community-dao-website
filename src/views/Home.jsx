@@ -1,7 +1,6 @@
 import React from "react";
 import Header from "../Header";
 import "./../sass/main.scss";
-import logo from '.././assets/img/logo.png';
 import { useEffect } from "react";
 import Footer from "../Footer";
 
