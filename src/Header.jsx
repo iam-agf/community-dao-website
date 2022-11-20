@@ -2,7 +2,6 @@ import { React, useState } from "react";
 import { Link } from "react-router-dom";
 import "./sass/main.scss";
 import logo from './assets/img/logo_circle_background.png';
-import HeaderLinks from "./HeaderLinks";
 import { CgMenu } from 'react-icons/cg';
 import HeaderBurger from "./HeaderBurger";
 
