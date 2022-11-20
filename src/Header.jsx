@@ -26,7 +26,7 @@ function Header() {
         }
       />
       <div className="header-nav">
-        <Link to={"/chains"} className="header-button">Chains</Link>
+        {/* <Link to={"/chains"} className="header-button">Chains</Link> */}
         <Link to={"/validators"} className="header-button">Validators</Link>
         <Link to={"/about"} className="header-button">About</Link>
       </div>
